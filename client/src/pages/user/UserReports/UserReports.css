@@ -1,0 +1,131 @@
+/* Animated Background */
+.reports-container {
+    padding: 20px;
+    min-height: 100vh;
+    background: linear-gradient(-45deg, #4b6cb7, #182848, #4b6cb7, #8e44ad);
+    background-size: 400% 400%;
+    animation: gradientBG 8s ease infinite;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Background Animation */
+  @keyframes gradientBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Glassmorphism Table */
+  .table-container {
+    background: rgba(255, 255, 255, 0.15); /* Transparent effect */
+    backdrop-filter: blur(15px); /* Frosted glass effect */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .table-container:hover {
+    background: rgba(255, 255, 255, 0.25);
+  }
+  
+  /* Table Custom Styling */
+  .ant-table {
+    background: transparent !important;
+  }
+  
+  .ant-table-thead > tr > th {
+    background: rgba(255, 255, 255, 0.3) !important;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  .ant-table-tbody > tr {
+    transition: all 0.3s ease;
+  }
+  
+  .ant-table-tbody > tr:hover {
+    background: rgba(255, 255, 255, 0.2) !important;
+    transform: scale(1.02);
+  }
+  
+  /* Premium Button */
+  .premium-btn {
+    font-weight: 700;
+    padding: 12px 24px;
+    border-radius: 50px;
+    border: none;
+    background: linear-gradient(90deg, #ff512f, #dd2476);
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 4px 15px rgba(255, 81, 47, 0.4);
+  }
+  
+  /* Hover Effect */
+  .premium-btn:hover {
+    box-shadow: 0 6px 20px rgba(255, 81, 47, 0.6);
+    transform: scale(1.05);
+  }
+  
+  /* Glowing Effect */
+  .premium-btn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 10%, transparent 50%);
+    transition: all 0.6s ease-out;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0);
+  }
+  
+  .premium-btn:active::before {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .premium-btn:active {
+    transform: scale(0.98);
+  }
+  
+  /* Divider with Animation */
+  .divider {
+    height: 4px;
+    background: linear-gradient(90deg, #ff512f, #dd2476);
+    animation: moveGradient 3s linear infinite;
+    border-radius: 2px;
+  }
+  
+  @keyframes moveGradient {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 100%;
+    }
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .table-container {
+      padding: 16px;
+    }
+  }
+  

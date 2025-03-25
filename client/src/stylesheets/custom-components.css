@@ -1,0 +1,143 @@
+/* Card Styling */
+.card {
+  box-shadow: 0 0 1px gray;
+}
+
+.card-lg {
+  box-shadow: 0 0 2px rgb(128, 128, 128);
+}
+
+/* Divider */
+.divider {
+  border-bottom: 1px solid rgb(182, 182, 182);
+  margin: 10px 0;
+}
+
+/* Loader */
+.loader-parent {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.638);
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  height: 80px;
+  width: 80px;
+  border: 5px solid #f3f3f3;
+  border-left-color: transparent;
+  border-radius: 50%;
+  animation: loader 1s linear infinite;
+}
+
+/* Option Styling */
+.option {
+  box-shadow: rgba(0, 0, 0, 0.638) 0px 0px 1.5px;
+  padding: 10px;
+  border-radius: 2px;
+}
+
+.selected-option {
+  box-shadow: rgba(0, 0, 0, 0.638) 0px 0px 1px;
+  padding: 10px;
+  border-radius: 2px;
+  border: 2px solid var(--primary);
+}
+
+/* Result Styling */
+.result {
+  box-shadow: rgba(75, 75, 75, 0.638) 0px 0px 2px;
+  padding: 30px;
+  color: white !important;
+  border-radius: 5px;
+}
+
+/* Lottie Animation */
+.lottie-animation {
+  height: 300px;
+}
+
+/* Timer Styling */
+.timer {
+  background-color: #894114;
+  color: white !important;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+
+/* Loader Animation */
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .card {
+    padding: 15px;
+  }
+
+  .card-lg {
+    padding: 15px;
+  }
+
+  .loader {
+    height: 60px;
+    width: 60px;
+  }
+
+  .timer {
+    height: 60px;
+    width: 60px;
+    font-size: 14px;
+  }
+
+  .result {
+    padding: 20px;
+  }
+
+  .lottie-animation {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 10px;
+  }
+
+  .card-lg {
+    padding: 10px;
+  }
+
+  .loader {
+    height: 50px;
+    width: 50px;
+  }
+
+  .timer {
+    height: 50px;
+    width: 50px;
+    font-size: 12px;
+  }
+
+  .result {
+    padding: 15px;
+  }
+
+  .lottie-animation {
+    height: 150px;
+  }
+}

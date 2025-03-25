@@ -1,0 +1,61 @@
+.custom-modal {
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .input-field:focus {
+    border-color: #1890ff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(24, 144, 255, 0.5);
+  }
+  
+  .flex-container {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .cancel-button {
+    background: transparent;
+    color: #1890ff;
+    border: 1px solid #1890ff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .cancel-button:hover {
+    background: #1890ff;
+    color: white;
+  }
+  
+  .save-button {
+    background: #1890ff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .save-button:hover {
+    background: #40a9ff;
+  }
+  

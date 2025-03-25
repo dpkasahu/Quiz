@@ -1,0 +1,80 @@
+/* Input and Select Styling */
+input,
+select {
+  height: 40px !important;
+  padding: 10px 20px !important;
+  border: 2px solid rgb(131, 130, 130) !important;
+  width: 100%;
+  border-radius: 2px !important;
+  box-sizing: border-box; /* Ensures padding is included in width calculation */
+}
+
+/* Form Item Styling */
+.ant-form-item {
+  margin-bottom: 10px !important;
+}
+
+/* Button Styling */
+button {
+  padding: 0px 25px;
+  border-radius: 2px;
+  height: 40px !important;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Primary Button (Contained) */
+.primary-contained-btn {
+  background-color: var(--primary);
+  color: white;
+  border: none; /* Removed border for a clean look */
+}
+
+.primary-contained-btn:hover {
+  background-color: darken(var(--primary), 10%);
+}
+
+/* Primary Button (Outlined) */
+.primary-outlined-btn {
+  background-color: white;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
+
+.primary-outlined-btn:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  input,
+  select {
+    height: 35px !important;
+    padding: 8px 15px !important;
+  }
+
+  button {
+    height: 35px !important;
+    padding: 0 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  input,
+  select {
+    height: 30px !important;
+    padding: 6px 10px !important;
+  }
+
+  button {
+    height: 30px !important;
+    padding: 0 15px;
+    font-size: 12px;
+  }
+}

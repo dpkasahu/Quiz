@@ -1,0 +1,172 @@
+/* Background Animation */
+@keyframes moveBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.admin-reports-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #1e293b, #0f172a);
+    background-size: 400% 400%;
+    animation: moveBackground 12s ease-in-out infinite;
+    padding: 20px;
+}
+
+/* Glassmorphism Effect */
+.admin-reports-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 15px rgba(255, 255, 255, 0.15);
+    width: 100%;
+    max-width: 950px;
+    text-align: center;
+    backdrop-filter: blur(12px);
+    transition: all 0.3s ease-in-out;
+    color: white;
+}
+
+/* Filters */
+.filters-container {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Search Input */
+.search-input {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    width: 200px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    transition: 0.3s ease;
+}
+
+.search-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.search-input:focus {
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Buttons */
+.clear-button, .search-button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.clear-button {
+    background: #e63946;
+    color: white;
+}
+
+.clear-button:hover {
+    background: #c5303e;
+    transform: scale(1.05);
+}
+
+.search-button {
+    background: #22c55e;
+    color: black;
+}
+
+.search-button:hover {
+    background: #16a34a;
+    transform: scale(1.05);
+}
+
+/* Table */
+.reports-table {
+    margin-top: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    overflow-x: auto;
+    backdrop-filter: blur(8px);
+}
+
+.reports-table .ant-table-thead > tr > th {
+    background: #4ade80 !important;
+    color: black !important;
+    font-weight: bold;
+}
+
+.reports-table .ant-table-row {
+    transition: all 0.3s ease-in-out;
+    color: white;
+}
+
+.reports-table .ant-table-row:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .admin-reports-box {
+        padding: 25px;
+        max-width: 90%;
+    }
+
+    .search-input {
+        width: 100%;
+    }
+
+    .filters-container {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .admin-reports-box {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .search-input {
+        width: 100%;
+    }
+
+    .filters-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .clear-button, .search-button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .admin-reports-box {
+        padding: 18px;
+        width: 95%;
+    }
+
+    .filters-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .clear-button, .search-button {
+        width: 100%;
+        font-size: 14px;
+    }
+}

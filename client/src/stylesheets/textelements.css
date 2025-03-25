@@ -1,0 +1,70 @@
+/* Text Size Utility Classes */
+.text-2xl {
+    font-size: 1.5rem; /* 24px */
+    line-height: 2rem; /* 32px */
+}
+
+.text-xl {
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.75rem; /* 28px */
+}
+
+.text-lg {
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.5rem; /* 24px */
+}
+
+.text-md {
+    font-size: 1rem; /* 16px */
+    line-height: 1.25rem; /* 20px */
+}
+
+.text-sm {
+    font-size: 0.875rem; /* 14px */
+    line-height: 1rem; /* 16px */
+}
+
+.text-xs {
+    font-size: 0.75rem; /* 12px */
+    line-height: 0.875rem; /* 14px */
+}
+
+/* Heading Styles */
+h1 {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+    font-size: 2rem; /* Default font size for h1 */
+    line-height: 2.5rem; /* Default line height for h1 */
+}
+
+/* Text Alignment */
+.text-center {
+    text-align: center;
+}
+
+/* Anchor Link Styling */
+a {
+    color: var(--primary) !important;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primary) !important;
+    text-decoration: underline !important;
+}
+
+/* Icon Styling */
+i {
+    font-size: 18px !important;
+    cursor: pointer !important;
+}
+
+/* Underline Text */
+.underline {
+    text-decoration: underline !important;
+}
+
+/* Optional: Default Font Family (you can adjust this based on your app's design) */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}

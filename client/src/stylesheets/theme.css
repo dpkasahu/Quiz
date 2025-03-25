@@ -1,0 +1,86 @@
+/* Color Palette */
+:root {
+    --primary: #0F3460; /* Blue */
+    --secondary: #ff5722; /* Orange */
+    --success: #6fbf71; /* Green */
+    --info: #00bcd4; /* Light Blue */
+    --warning: #e47943; /* Yellow-Orange */
+    --danger: #f44336; /* Red */
+    --light: #f1f1f1; /* Light Gray */
+    --dark: #212121; /* Dark Gray */
+  }
+  
+  /* Background Colors */
+  .bg-primary {
+      background-color: var(--primary) !important;
+  }
+  
+  .bg-secondary {
+      background-color: var(--secondary) !important;
+  }
+  
+  .bg-success {
+      background-color: var(--success) !important;
+  }
+  
+  .bg-info {
+      background-color: var(--info) !important;
+  }
+  
+  .bg-warning {
+      background-color: var(--warning) !important;
+  }
+  
+  .bg-danger {
+      background-color: var(--danger) !important;
+  }
+  
+  .bg-light {
+      background-color: var(--light) !important;
+  }
+  
+  .bg-dark {
+      background-color: var(--dark) !important;
+  }
+  
+  .bg-white {
+      background-color: #fff !important;
+  }
+  
+  /* Text Colors */
+  .text-primary {
+      color: var(--primary) !important;
+  }
+  
+  .text-secondary {
+      color: var(--secondary) !important;
+  }
+  
+  .text-success {
+      color: var(--success) !important;
+  }
+  
+  .text-info {
+      color: var(--info) !important;
+  }
+  
+  .text-warning {
+      color: var(--warning) !important;
+  }
+  
+  .text-danger {
+      color: var(--danger) !important;
+  }
+  
+  .text-light {
+      color: var(--light) !important;
+  }
+  
+  .text-dark {
+      color: var(--dark) !important;
+  }
+  
+  .text-white {
+      color: white !important;
+  }
+  

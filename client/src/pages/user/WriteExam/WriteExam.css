@@ -1,0 +1,155 @@
+/* Animated Background */
+.exam-container {
+    min-height: 100vh;
+    padding: 20px;
+    background: linear-gradient(-45deg, #ff512f, #dd2476, #1e3c72, #2a5298);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Background Animation */
+  @keyframes gradientBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Glassmorphism Exam Box */
+  .exam-box {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .exam-box:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Stylish Timer */
+  .timer {
+    background: linear-gradient(90deg, #ff512f, #dd2476);
+    padding: 8px 16px;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Options Styling */
+  .option {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .option:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+  }
+  
+  .selected-option {
+    background: linear-gradient(90deg, #ff512f, #dd2476);
+    color: white;
+    transform: scale(1.05);
+  }
+  
+  /* Premium Buttons */
+  .primary-contained-btn {
+    font-weight: 700;
+    padding: 12px 24px;
+    border-radius: 50px;
+    border: none;
+    background: linear-gradient(90deg, #ff512f, #dd2476);
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 4px 15px rgba(255, 81, 47, 0.4);
+  }
+  
+  .primary-contained-btn:hover {
+    box-shadow: 0 6px 20px rgba(255, 81, 47, 0.6);
+    transform: scale(1.05);
+  }
+  
+  .primary-outlined-btn {
+    font-weight: 700;
+    padding: 12px 24px;
+    border-radius: 50px;
+    border: 2px solid #ff512f;
+    background: transparent;
+    color: #ff512f;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .primary-outlined-btn:hover {
+    background: #ff512f;
+    color: white;
+    transform: scale(1.05);
+  }
+  
+  /* Result Box */
+  .result {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .bg-success {
+    background: rgba(76, 175, 80, 0.3);
+    padding: 12px;
+    border-radius: 8px;
+  }
+  
+  .bg-error {
+    background: rgba(244, 67, 54, 0.3);
+    padding: 12px;
+    border-radius: 8px;
+  }
+  
+  /* Divider with Animation */
+  .divider {
+    height: 4px;
+    background: linear-gradient(90deg, #ff512f, #dd2476);
+    animation: moveGradient 3s linear infinite;
+    border-radius: 2px;
+  }
+  
+  @keyframes moveGradient {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 100%;
+    }
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .exam-box {
+      padding: 16px;
+    }
+  }
+  

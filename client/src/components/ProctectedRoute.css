@@ -1,0 +1,178 @@
+/* Full Layout Styling */
+.layout {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to bottom, #1e293b, #0f172a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  width: 280px;  /* Increased for better readability */
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.1); /* Glass Effect */
+  backdrop-filter: blur(10px);
+  box-shadow: 5px 0 15px rgba(255, 255, 255, 0.2); /* Slightly stronger shadow for better contrast */
+  padding: 20px;
+  transition: width 0.3s ease-in-out;
+}
+
+.sidebar.collapsed {
+  width: 90px; /* Collapsed state still has enough space for icons */
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Menu Item */
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #e0e0e0; /* Lighter color for better visibility */
+  font-size: 1.1rem;
+  padding: 12px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-item i {
+  font-size: 1.5rem;
+}
+
+/* Active Menu Item */
+.active-menu-item {
+  background: linear-gradient(to right, #4ade80, #22c55e);
+  color: #000;
+  font-weight: bold;
+  transform: scale(1.05);
+}
+
+/* Hover Effect */
+.menu-item:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Body Section */
+.body {
+  flex-grow: 1;
+  padding: 20px;
+  color: #e0e0e0; /* Ensure body text is visible */
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px 25px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.header h1 {
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+/* Toggle Sidebar Icons */
+.header i {
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+.header i:hover {
+  color: #22c55e;
+}
+
+/* Content Area */
+.content {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 10px;
+  min-height: 80vh;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Design for Laptop and Below */
+@media (max-width: 1024px) {
+  .sidebar {
+      width: 250px; /* Adjusted for a better laptop layout */
+      padding: 20px;
+  }
+
+  .menu-item {
+      font-size: 1.1rem;
+      padding: 12px;
+  }
+
+  .header {
+      padding: 15px 20px;
+  }
+
+  .content {
+      min-height: 85vh; /* Slightly higher content height for better viewing */
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+      width: 220px;
+  }
+
+  .menu-item {
+      font-size: 1rem;
+      padding: 10px;
+  }
+
+  .header {
+      padding: 12px 18px;
+  }
+
+  .header h1 {
+      font-size: 1.5rem;
+  }
+
+  .content {
+      min-height: 90vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+      width: 70px;
+      padding: 10px;
+  }
+
+  .menu-item {
+      font-size: 0.9rem;
+  }
+
+  .header {
+      width: 100%;
+      padding: 10px 15px;
+  }
+
+  .header h1 {
+      font-size: 1.3rem;
+  }
+
+  .content {
+      min-height: 70vh;
+      padding: 15px;
+  }
+}
