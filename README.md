@@ -55,19 +55,6 @@ DELETE	/api/questions/:id	  Delete a question
 POST	  /api/submit	          Submit quiz answers and calculate score
 
 
-📸 Screenshots
-
-
-![Screenshot 2025-03-27 115144](https://github.com/user-attachments/assets/a2cc5d26-75e9-4ea2-b8c0-532ee0c89a0a)
-![Screenshot 2025-03-27 115201](https://github.com/user-attachments/assets/dfa8dab5-2616-4ade-9240-83ad864ca674)
-
-![Screenshot 2025-03-27 115823](https://github.com/user-attachments/assets/1174b80f-dc03-4703-80a3-3a9535691eeb)
-![Screenshot 2025-03-27 115655](https://github.com/user-attachments/assets/95a33c2e-1ff6-493a-808d-453876df3df2)
-
-![Screenshot 2025-03-27 121637](https://github.com/user-attachments/assets/6f24455a-44df-415d-b424-b5e38fc211b8)
-
-![Screenshot 2025-03-27 121410](https://github.com/user-attachments/assets/20a1cc2f-fdc9-4b63-9980-a05d6dab9255)
-
 📄 Folder Structure
 /Quiz
   ├── /client     (React Frontend)
